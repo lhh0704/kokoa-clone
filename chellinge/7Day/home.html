@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>7Day</title>
+    <style>
+        body{
+            background-color: #6CBCBE;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .first{
+            width: 100px;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-between;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(180deg);
+        }
+        100% {
+          transform: rotate(180deg);
+        }
+      }
+
+        .circle{
+            width: 15px;
+            height: 15px;
+            background-color: white;
+            border-radius: 50% ;
+        }
+
+        .second{
+            margin-top: 100px;
+            width: 100px;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-between;
+
+            }
+    
+        @keyframes super{
+            0%{
+                transform: scaleY(1);
+            }
+            25%{
+                transform:  scaleY(2) ;
+
+            }
+            50%{
+                transform:  scaleY(1) ;
+
+            }
+            75%{
+                transform:  scaleY(1) ;
+
+            }
+            100%{
+                transform: scaleY(1);
+
+            }
+        }
+        .box{
+            width:15px;
+            height: 50px;
+            background-color: white;
+            animation: super 1s  infinite ;
+        }
+        .box:nth-child(1){
+            animation-delay: 0.1s;
+        }
+        .box:nth-child(2){
+            animation-delay: 0.2s;
+        }
+        .box:nth-child(3){
+            animation-delay: 0.3s;
+        }
+        .box:nth-child(4){
+            animation-delay: 0.4s;
+        }
+        .box:nth-child(5){
+            animation-delay: 0.5s;
+        }
+    </style>
+    </head>
+</html>
+<body>
+    <section class="first">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </section>
+
+    <section class="second">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </section>
+
+</body>
+</html>
