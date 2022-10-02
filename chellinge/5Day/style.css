@@ -1,0 +1,31 @@
+body {
+    height: 100vh;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .first {
+    height: 300px;
+    width: 300px;
+    background-color: #f5deb3;
+    border: 3px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .second {
+    height: 60px;
+    width: 60px;
+    background-color: #008080;
+    border: 3px solid white;
+    margin: 20px;
+  }
+  .third {
+    height: 60px;
+    width: 240px;
+    background-color: #008080;
+    border: 3px dashed white;
+  }
