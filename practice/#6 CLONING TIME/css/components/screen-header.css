@@ -1,0 +1,45 @@
+.screen-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--horizontal-spade);
+    margin-bottom: 15px;
+}
+.screen-header__title{
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.screen-header__icons span{
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+@keyframes rotateCog {
+    from {
+      transform: none;
+    }
+    to {
+      transform: rotateZ(360deg);
+    }
+  }
+  
+  .screen-header__icons
+  .fa-gear:hover {
+    animation: rotateCog 1s linear infinite;
+  }
+
+.screen-header__icons{
+    position: relative;
+}
+
+.screen-header__new{
+        background-color: tomato;
+        width: 4px;
+        height: 4px;
+        border-radius: 2px;
+        color: white;
+        position: absolute;
+        right: -3px;
+        bottom: 22px;
+}
